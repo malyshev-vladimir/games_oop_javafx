@@ -16,7 +16,7 @@ public class Win {
 
     public static boolean monoHorizontal(int[][] array, int row) {
         boolean result = true;
-        for (int index  = 0; index  < array[row].length; index ++) {
+        for (int index  = 0; index  < array[row].length; index++) {
             if (array[row][index] == 0) {
                 result = false;
                 break;
