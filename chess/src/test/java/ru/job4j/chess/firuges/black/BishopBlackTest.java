@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class BishopBlackTest {
     @Test
-    public void testPosition() {
+    public void testPositionFunction() {
         BishopBlack in = new BishopBlack(Cell.C8);
         Cell expected = Cell.C8;
         Cell out = in.position();
@@ -14,7 +14,7 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void testCopy() {
+    public void testCopyFunction() {
         BishopBlack in = new BishopBlack(Cell.C8);
         Cell out = in.copy(Cell.E6).position();
         Cell expected = Cell.E6;
@@ -22,7 +22,7 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void testWay() {
+    public void testWayFunction() {
         BishopBlack in = new BishopBlack(Cell.C1);
         Cell[] out = in.way(Cell.G5);
         Cell[] expected = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
